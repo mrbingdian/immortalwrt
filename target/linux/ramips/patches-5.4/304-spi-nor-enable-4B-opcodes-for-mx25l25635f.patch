@@ -21,7 +21,7 @@ For reference see:
 @@ -2586,11 +2587,12 @@ static const struct flash_info spi_nor_i
 	{ },
 };
-
+ 
 -static const struct flash_info *spi_nor_read_id(struct spi_nor *nor)
 +static const struct flash_info *spi_nor_read_id(struct spi_nor *nor,
 +						const char *name)
